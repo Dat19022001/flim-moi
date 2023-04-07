@@ -30,10 +30,6 @@
         transition: all 0.3s ease-in-out;
         transform: scale(1.5);
       }
-      .baner__name{
-        bottom: 0px;
-        transition: all 0.3s ease-in-out;
-      }
     }
     svg {
       background: #ff9601;
@@ -74,10 +70,11 @@
   &__img {
     img {
       height: 255.6px;
+      vertical-align: middle;
     }
   }
   &__name{
-    bottom: 6px;
+    bottom: 0px;
     left: 0;
     right: 0;
     background: rgba(0, 0, 0, 0.7);
