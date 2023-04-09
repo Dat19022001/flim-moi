@@ -6,6 +6,7 @@ import HeaderComponent from "../../components/headerConponent";
 import Sidebar from "../../components/sidebar";
 import "./style.scss";
 import { appPath } from "../../config/appPath";
+import Tags from "../../components/Tags";
 const Phim = () => {
   const url = window.location.pathname;
   const array = url.split("/");
@@ -211,6 +212,7 @@ const Phim = () => {
                 <span className="phim__content-Title">Nội Dung Phim</span>
                 <p>{data.Content}</p>
               </div>
+              <Tags title={data.Name}/>
               {/* <div className="phim__comment">
                 <input type="text" />
               </div> */}
